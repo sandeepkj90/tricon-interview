@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "c362b777-43be-4a2a-a9ef-086769d40668",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "929342"
+	},
+	"item": [
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"JERRY LOREEY\",\n    \"email\": \"jerry.loreey@gmail.com\",\n    \"company\": {\n        \"name\": \"Right Solutions\",\n        \"email\": \"info@rightsolutions.com\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Alan jones\",\n    \"email\": \"alan.jones@gmail.com\",\n    \"company\": {\n        \"name\": \"Alan Solutions\",\n        \"email\": \"info@alansolutions.com\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/users/USR176"
+			},
+			"response": []
+		},
+		{
+			"name": "User GetBY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/users/USR562"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:4000/users/USR176"
+			},
+			"response": []
+		},
+		{
+			"name": "Get UserList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/users"
+			},
+			"response": []
+		}
+	]
+}
